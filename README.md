@@ -10,7 +10,30 @@ The multi-sensors A-train observations allow to make the correlation between the
 
 
 # Input
-
+Input
 ----------
-| Frequency | Variable | 
+
+| Frequency | Variable | CMOR labels | Unit | File Format |
+|:----------|:-----------------------------|:-------------|:------|:------------|
+| daily mean | ISCCP mean cloud top pressure | pctisccp     | Pa    | nc
+|  | ISCCP mean cloud albedo | albisccp     |  1    | nc
+|  | Total cloud cover simulating ISCCP | cltisccp     |  %    | nc
+|  | Surface snow area fraction | snc     |  %    | nc
+|  | Sea ice area fraction  | sic     |  1    | nc
+|  | Outgoing shortwave flux at the top-of-the-atmosphere(TOA)  | rsut     |  Wm-2    | nc
+|  | TOA outgoing longwave flux  | rlut     |  Wm-2    | nc
+|  | TOA outgoing shortwave flux assuming clear-sky | rsutcs     |  Wm-2    | nc
+|  | TOA outgoing longwave flux assuming clear-sky | rsutcs     |  Wm-2    | nc
+
+Link to the observations (if they are expected in the code):
+
+Monthly ISCCP data: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
+
+Output
+----------
+Single value texts of Statistical mean of daily mean CREMpd [Wm-2]
+
+ 
+Is a script to draw a figure in the paper included ?: No
+
 
