@@ -7,3 +7,10 @@ The multi-sensors A-train observations allow to make the correlation between the
 1) Konsta D., H. Chepfer, J.-L. Dufresne, 2012: A process oriented characterization of tropical oceanic clouds for climate model evaluation, based on a statistical analysis of daytime A-train observations, Clim. Dyn., 39:2091-2108, DOI: 10.1007/s00382-012-1533-7
 
 2) Konsta, D., J-L. Dufresne, H. Chepfer, A. Idelkadi and G. Cesana, 2015 : Use of A-train satellite observations (CALIPSO-PARASOL) to evaluate tropical cloud properties in the LMDZ5 GCM, Clim Dyn, 1-22, doi: 10.1007/s00382-016-3050-6. 
+
+
+# Input
+
+----------
+| Frequency | Variable | 
+
