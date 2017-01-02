@@ -9,15 +9,15 @@ The multi-sensors A-train observations allow to make the correlation between the
 2) Konsta, D., J-L. Dufresne, H. Chepfer, A. Idelkadi and G. Cesana, 2015 : Use of A-train satellite observations (CALIPSO-PARASOL) to evaluate tropical cloud properties in the LMDZ5 GCM, Clim Dyn, 1-22, doi: 10.1007/s00382-016-3050-6. 
 
 
-# Input
+
 Input
 ----------
 
 | Frequency | Variable | CMOR labels | Unit | File Format |
 |:----------|:-----------------------------|:-------------|:------|:------------|
-| daily mean | ISCCP mean cloud top pressure | pctisccp     | Pa    | nc
-|  | ISCCP mean cloud albedo | albisccp     |  1    | nc
-|  | Total cloud cover simulating ISCCP | cltisccp     |  %    | nc
+| daily mean | Cloud Reflectance PARASOL | CRef_par    |    | nc
+|  | Cloud Reflectance MODIS 1km  |  CRef_mod1km   |     | nc
+|  | Cloud Reflectance MODIS 250m  |  CRef_mod250   |     | nc
 |  | Surface snow area fraction | snc     |  %    | nc
 |  | Sea ice area fraction  | sic     |  1    | nc
 |  | Outgoing shortwave flux at the top-of-the-atmosphere(TOA)  | rsut     |  Wm-2    | nc
