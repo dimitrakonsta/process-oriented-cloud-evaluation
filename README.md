@@ -18,22 +18,20 @@ Input
 | daily mean | Cloud Reflectance PARASOL | CRef_par    |    | nc
 |  | Cloud Reflectance MODIS 1km  |  CRef_mod1km   |     | nc
 |  | Cloud Reflectance MODIS 250m  |  CRef_mod250   |     | nc
-|  | Surface snow area fraction | snc     |  %    | nc
-|  | Sea ice area fraction  | sic     |  1    | nc
-|  | Outgoing shortwave flux at the top-of-the-atmosphere(TOA)  | rsut     |  Wm-2    | nc
-|  | TOA outgoing longwave flux  | rlut     |  Wm-2    | nc
-|  | TOA outgoing shortwave flux assuming clear-sky | rsutcs     |  Wm-2    | nc
-|  | TOA outgoing longwave flux assuming clear-sky | rsutcs     |  Wm-2    | nc
+|  | Total Cloud fraction CALIPSO-GOCCP | cltcalipso     |  %    | nc
+|  | 3D Cloud Fraction CALIPSO-GOCCP  |  clcalipso    |  %    | nc
+|  | Low-level Cloud Fraction CALIPSO-GOCCP  | cllcalipso     |  %   | nc
+
 
 Link to the observations (if they are expected in the code):
 
-Monthly ISCCP data: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
+Daily Cloud Reflectance and CALIPSO-GOCCP data: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
 Output
 ----------
-Single value texts of Statistical mean of daily mean CREMpd [Wm-2]
+Plot 2D hostograms of cloud reflectance and cloud cover
 
  
-Is a script to draw a figure in the paper included ?: No
+Is a script to draw a figure in the paper included ?: Yes
 
 
