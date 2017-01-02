@@ -13,7 +13,7 @@ References
 Input
 ----------
 
-| Frequency | Variable | CMOR labels | Unit | File Format |
+| Frequency | Variable | Variable labels | Unit | File Format |
 |:----------|:-----------------------------|:-------------|:------|:------------|
 | daily mean | Cloud Reflectance PARASOL | CRef_par    |    | nc
 |  | Cloud Reflectance MODIS 1km  |  CRef_mod1km   |     | nc
