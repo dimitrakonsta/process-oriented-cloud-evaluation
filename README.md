@@ -34,4 +34,9 @@ Plot 2D hostograms of cloud reflectance and cloud cover
  
 Is a script to draw a figure in the paper included ?: Yes
 
+Addition to COSP 
+----------
+The diagnostic required an estimate of the PARASOL reflectance of the cloudy part of eachgrid cell, but the standard COSP output provide the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output (see .f in the code repository)
+
+
 
