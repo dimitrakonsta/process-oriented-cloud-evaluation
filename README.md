@@ -36,7 +36,7 @@ Is a script to draw a figure in the paper included ?: Yes
 
 Addition to COSP 
 ----------
-The diagnostic requirs an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provide the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output (see .f in the code repository)
+The diagnostic requirs an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provide the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output in the routine where variables are written to output files (see add_Crefl.f in the code repository)
 
 
 
