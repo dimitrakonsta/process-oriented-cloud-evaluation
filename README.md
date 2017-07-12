@@ -29,7 +29,7 @@ Daily Cloud Reflectance and CALIPSO-GOCCP data: http://climserv.ipsl.polytechniq
 
 Output
 ----------
-Plot 2D hostograms of cloud reflectance and cloud cover
+Plots of 2D histograms of cloud reflectance and cloud cover
 
  
 Is a script to draw a figure in the paper included ?: Yes
