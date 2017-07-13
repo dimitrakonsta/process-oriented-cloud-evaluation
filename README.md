@@ -22,6 +22,8 @@ Input
 | 8 hourly | Total Cloud fraction CALIPSO-GOCCP | cltcalipso     |  %    | nc
 | 8 hourly | Low-level Cloud Fraction CALIPSO-GOCCP  | cllcalipso     |  %   | nc
 
+All the above variables can be found in CMIP data with the exception of the variable parasol_crefl that needs a small addition to COSP simulator output (see Sect. Preprocessing).
+Additionally auxiliary input data are needed: the information of the azimuth solar angle. Details as well as the code to generate this data are provided in the Sect. Preprocessing. 
 
 The observational benchmarks, Daily Cloud Reflectance and CALIPSO-GOCCP data are found in http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
