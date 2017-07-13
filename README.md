@@ -24,7 +24,7 @@ Input
 
 All the above variables can be found in CMIP data with the exception of the variable parasol_crefl that needs a small addition to COSP simulator output (see Sect. Preprocessing).
 
-Additionally auxiliary input data of the azimuth solar angle are needed ('tetas_lmdz'). Details as well as the code to generate this file are provided in the Sect. Preprocessing. 
+Additionally auxiliary input data of the solar zenith angle are needed ('tetas_lmdz'). Details as well as the code to generate this file are provided in the Sect. Preprocessing. 
 
 The observational benchmarks, Daily Cloud Reflectance and CALIPSO-GOCCP data are found in http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
@@ -36,8 +36,10 @@ Is a script to draw a figure in the paper included ?: No
 
 Preprocessing 
 ----------
-The diagnostic requirs an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provide the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output in the routine where variables are written to output files (see add_cosp_Crefl.f in the code repository). 
-In case where this variable is not provided, the diagnostics can still be proceeded with the use of 'parasol_refl' instead as described in the code provided (https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/code/matlab/ref_cf.m)
+The diagnostic requirs an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provide the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output in the routine where variables are written to output files (see https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/preprocessing/code_cosp/fortran/add_cosp_Crefl.f). 
+In case where this variable is not provided, the diagnostics can still be proceeded with the use of 'parasol_refl' instead but only at instantaneous (8hrly) time scale, as described in the code provided (https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/code/matlab/ref_cf.m).
+
+The code needs also the file 'tetas_lmdz96' as input information. This inforamtion is needed because the reflectance from PARASOL is given as a function of 5 solar zenith angles (tetas). In each case the corresponding tetas at the given place and at the given time should be chosen. We consider approximately that tetas depends on the latitude and on the reference month. To calculate the dependence of tetas on the model latitude, we use the program https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/preprocessing/code_tetas/fortran/ess_gcm2pold.f that uses as input the file 'latitude_lmdz96' and generates the file 'tetas_lmdz96'. Both files are provided in the Sect. data. The file gives for eac grid of the model and for each month, the corresponding tetas. The diagnostic code reads this information and extrapolates the corresponding reflectance from PARASOL. 
 
 
 
