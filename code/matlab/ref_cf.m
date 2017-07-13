@@ -13,7 +13,16 @@ pourc_oce = ncread('AmipLmdz5_19790101_19790131_HF_histhf.nc','pourc_oce',[1 1 1
 
 
 % read tetas from the model
-tetas=load('tetas_lmdz96');
+h=load('tetas_lmdz96');
+h=h(:,2);
+h=reshape(h,12,length(lat));
+tetas=zeros(length(lat),13);
+for ilat=1:length(lat)
+    for imon=1:12
+      tetas(ilat,1)=lat(ilat);
+      tetas(ilat,imon+1)=h(imon,ilat);
+    end
+end  
 tetas=tetas(:,2:end); % 12 tetas for each month
 tetas=tetas(:,1);   % keep the tetas for example of january
 
