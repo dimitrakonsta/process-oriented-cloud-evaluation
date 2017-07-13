@@ -15,17 +15,12 @@ Input
 
 | Frequency | Variable | Variable labels | Unit | File Format |
 |:----------|:-----------------------------|:-------------|:------|:------------|
-| daily mean | Cloud Reflectance PARASOL | CRef_par    |    | nc
-|  | Cloud Reflectance MODIS 1km  |  CRef_mod1km   |     | nc
-|  | Cloud Reflectance MODIS 250m  |  CRef_mod250   |     | nc
-|  | Total Cloud fraction CALIPSO-GOCCP | cltcalipso     |  %    | nc
-|  | 3D Cloud Fraction CALIPSO-GOCCP  |  clcalipso    |  %    | nc
-|  | Low-level Cloud Fraction CALIPSO-GOCCP  | cllcalipso     |  %   | nc
+| 8 hourly | Reflectance PARASOL | CRef_par    |    | nc
+| 8 hourly | Total Cloud fraction CALIPSO-GOCCP | cltcalipso     |  %    | nc
+| 8 hourly | Low-level Cloud Fraction CALIPSO-GOCCP  | cllcalipso     |  %   | nc
 
 
-Link to the observations (if they are expected in the code):
-
-Daily Cloud Reflectance and CALIPSO-GOCCP data: http://climserv.ipsl.polytechnique.fr/cfmip-obs/
+The observational benchmarks are Daily Cloud Reflectance and CALIPSO-GOCCP data found in http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
 Output
 ----------
