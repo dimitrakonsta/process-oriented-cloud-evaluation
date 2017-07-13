@@ -23,7 +23,8 @@ Input
 | 8 hourly | Low-level Cloud Fraction CALIPSO-GOCCP  | cllcalipso     |  %   | nc
 
 All the above variables can be found in CMIP data with the exception of the variable parasol_crefl that needs a small addition to COSP simulator output (see Sect. Preprocessing).
-Additionally auxiliary input data are needed: the information of the azimuth solar angle. Details as well as the code to generate this data are provided in the Sect. Preprocessing. 
+
+Additionally auxiliary input data of the azimuth solar angle are needed ('tetas_lmdz'). Details as well as the code to generate this file are provided in the Sect. Preprocessing. 
 
 The observational benchmarks, Daily Cloud Reflectance and CALIPSO-GOCCP data are found in http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
@@ -35,7 +36,11 @@ Is a script to draw a figure in the paper included ?: No
 
 Preprocessing 
 ----------
-The diagnostic requirs an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provide the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output in the routine where variables are written to output files (see add_cosp_Crefl.f in the code repository)
+The diagnostic requirs an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provide the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output in the routine where variables are written to output files (see add_cosp_Crefl.f in the code repository). 
+In case where this variable is not provided, the diagnostics can still be proceeded with the use of 'parasol_refl' instead as described in the code provided (https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/code/matlab/ref_cf.m)
+
+
+
 
 
 
