@@ -15,7 +15,10 @@ Input
 
 | Frequency | Variable | Variable labels | Unit | File Format |
 |:----------|:-----------------------------|:-------------|:------|:------------|
-| 8 hourly | Reflectance PARASOL | CRef_par    |    | nc
+| - | Latitude grid | lat    |  degrees  | nc
+| - | Longitude grid | lon    |  degrees  | nc
+| - | Land Ocean Mask | pourc_oce   |  flag  | nc
+| 8 hourly | Cloud Reflectance PARASOL | parasol_crefl    | -  | nc
 | 8 hourly | Total Cloud fraction CALIPSO-GOCCP | cltcalipso     |  %    | nc
 | 8 hourly | Low-level Cloud Fraction CALIPSO-GOCCP  | cllcalipso     |  %   | nc
 
@@ -24,7 +27,7 @@ The observational benchmarks are Daily Cloud Reflectance and CALIPSO-GOCCP data 
 
 Output
 ----------
-Plots of 2D histograms of cloud reflectance and cloud cover. An eoutput example can be found in https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/tree/master/images
+Plots of 2D histograms of cloud reflectance and cloud cover. An output example can be found in https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/tree/master/images
 
 Is a script to draw a figure in the paper included ?: No
 
