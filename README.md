@@ -27,7 +27,7 @@ Output
 Plots of 2D histograms of cloud reflectance and cloud cover
 
  
-Is a script to draw a figure in the paper included ?: Yes
+Is a script to draw a figure in the paper included ?: No
 
 Preprocessing 
 ----------
