@@ -18,12 +18,12 @@ Input
 | - | Latitude grid | lat    |  degrees  | nc
 | - | Longitude grid | lon    |  degrees  | nc
 | - | Land Ocean Mask | pourc_oce   |  flag  | nc
-| 8 hourly | Cloud Reflectance PARASOL | parasol_crefl    | -  | nc
+| 8 hourly | Cloud Reflectance PARASOL / Reflectance PARASOL | parasol_crefl / parasol_refl   | -  | nc
 | 8 hourly | Total Cloud fraction CALIPSO-GOCCP | cltcalipso     |  %    | nc
 | 8 hourly | Low-level Cloud Fraction CALIPSO-GOCCP  | cllcalipso     |  %   | nc
 
 
-The observational benchmarks are Daily Cloud Reflectance and CALIPSO-GOCCP data found in http://climserv.ipsl.polytechnique.fr/cfmip-obs/
+The observational benchmarks, Daily Cloud Reflectance and CALIPSO-GOCCP data are found in http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
 Output
 ----------
