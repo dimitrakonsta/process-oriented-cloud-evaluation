@@ -8,7 +8,7 @@ ifile='AmipLmdz5_19790101_19790131_HF_histhfCOSP.nc'
 lon = ncread(ifile,'lon');
 lat = ncread(ifile,'lat');
 
-%read grid land-ocean
+%read mask land-ocean
 pourc_oce = ncread('AmipLmdz5_19790101_19790131_HF_histhf.nc','pourc_oce',[1 1 1],[96 96 1]); 
 
 
