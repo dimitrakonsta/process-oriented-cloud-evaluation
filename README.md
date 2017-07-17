@@ -12,7 +12,7 @@ References
 Preprocessing 
 ----------
 
-The information of Latitude, Longitude and Land Ocean Mask should be given from netcdf files describing the standard geographical attributes of the grid cells.
+The information of Latitude, Longitude and Land Ocean Mask should be given from netcdf files describing the standard geographical attributes of the model's grid cells.
 
 Input
 ---------
