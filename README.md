@@ -16,11 +16,11 @@ The information of Latitude, Longitude and Land Ocean Mask should be given from 
 
 Input
 ---------
-| Frequency | Variable | Variable labels | Unit | File Format |
-|:----------|:-----------------------------|:-------------|:------|:------------|
-| - | Latitude grid | lat    |  degrees  | nc
-| - | Longitude grid | lon    |  degrees  | nc
-| - | Land Ocean Mask | pourc_oce   |  flag  | nc
+ Variable | Variable labels | Unit | File Format |
+:-----------------------------|:-------------|:------|:------------|
+| Latitude grid | lat    |  degrees  | nc
+| Longitude grid | lon    |  degrees  | nc
+| Land Ocean Mask | pourc_oce   |  flag  | nc
 
 
 
