@@ -1,3 +1,8 @@
+% This script creates plots of 2D histograms 
+% of cloud cover and cloud reflectance 
+% Dimitra Konsta
+
+
 clear all
 
 
