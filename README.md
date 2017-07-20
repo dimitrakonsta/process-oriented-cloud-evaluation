@@ -14,8 +14,9 @@ Preprocessing
 
 The information of Latitude, Longitude and Land Ocean Mask should be given from netcdf files describing the standard geographical attributes of the model's grid cells.
 
-Input
+<sub> Input </sub>
 ---------
+
  Variable | Variable labels | Unit | File Format |
 :-----------------------------|:-------------|:------|:------------|
 | Latitude grid | lat    |  degrees  | nc
@@ -25,7 +26,7 @@ Input
 
 
 
-Output
+<sub> Output </sub>
 --------
 The diagnostic calculation code needs the file 'tetas_lmdz96' as input information. This information is needed because the reflectance from PARASOL is given as a function of 5 solar zenith angles (tetas). In each case the corresponding tetas at the given place and at the given time should be chosen. We consider approximately that tetas depends on the latitude and on the reference month. To calculate the dependence of tetas on the model latitude and month, we use the program https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/preprocessing/code_tetas/fortran/ess_gcm2pold.f that uses as input the file 'latitude_lmdz96' and generates the ASCII file 'tetas_lmdz96'. Both files are provided in the Sect. data. The file 'tetas_lmdz96' gives for each grid of the model and for each month, the corresponding tetas. The diagnostic code reads this information and extrapolates the corresponding reflectance from PARASOL.
 
@@ -37,7 +38,7 @@ The diagnostic requires an estimate of the PARASOL reflectance of the cloudy par
 In case where this variable is not provided, the diagnostics can still be proceeded with the use of 'parasol_refl' instead, but only at instantaneous (8hrly) time scale, as described in the code provided (https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/code/matlab/ref_cf.m).
 
 
-Input
+<sub>  Input </sub>
 ----------
 
 | Frequency | Variable | Variable labels | Unit | File Format |
@@ -49,7 +50,7 @@ Input
 
 The observational benchmarks, Daily Cloud Reflectance and CALIPSO-GOCCP data are found in http://climserv.ipsl.polytechnique.fr/cfmip-obs/
 
-Output
+<sub>  Output </sub>
 ----------
 Plots of 2D histograms of cloud reflectance and cloud cover. An output example can be found in https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/tree/master/images
 
