@@ -26,7 +26,7 @@ The preprocessing code generates the ASCCI file 'tetas_lmdz96' provided in the S
 
 Preprocessing Β
 ----------
-The diagnostic requires an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provides the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output in the routine where variables are written to output files (see https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/preprocessing/code_cosp/fortran/add_cosp_Crefl.f). In case where parasol_crefl is provided the diagnistic code can be run on daily time scale.
+The diagnostic requires an estimate of the PARASOL reflectance of the cloudy part of each grid cell, but the standard COSP output provides the total value of PARASOL reflectance (i.e. cloud free + cloudy part of the grid cell). For that reason a small addition is required to the standard COSP simulator output in the routine where variables are written to output files (see https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/preprocessing/code_cosp/fortran/add_cosp_Crefl.f). In case where parasol_crefl is provided the diagnostic code can be run on daily time scale.
 In case where this variable is not provided, the diagnostics can still be proceeded with the use of 'parasol_refl' instead, but only at instantaneous (8hrly) time scale, as described in the code provided (https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/blob/master/code/matlab/ref_cf.m).
 
 <sub> Output </sub>
