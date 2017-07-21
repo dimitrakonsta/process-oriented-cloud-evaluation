@@ -58,7 +58,7 @@ The observational benchmarks, Daily Cloud Reflectance and CALIPSO-GOCCP data are
 ----------
 Plots of 2D histograms of cloud reflectance and cloud cover. An output example can be found in https://github.com/dimitrakonsta/process-oriented-cloud-evaluation/tree/master/images
 
-Is a script to draw a figure in the paper included ?: No
+Is a script to draw a figure in the paper included ?: Yes
 
 
 
